@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+:root{
+	--navbar-color: white;
+	--navbar-bg: black;
+	--blend-mode: screen;
+}
+.row {
+  margin: 0;
+  padding: 0;
+}
+.col,
+.text-end {
+  margin: 0;
+  padding: 0;
+}
+#navbar{
+	/* transition: top 0.3s; */
+}
+.navbar_ {
+  transition: 1s;
+  padding: 20px;
+  padding-left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  color: var(--navbar-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300 !important;
+}
+#presentation {
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  top: -80px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 100vh;
+  width: 100%;
+}
+.menu {
+  padding: 0;
+  margin: 0;
+  height: 80vh;
+}
+
+#presentation img {
+  width: 590vh;
+  margin: 0;
+  position: relative;
+  left: -2000px;
+  top: -600px;
+  padding: 0;
+  z-index: -2;
+  animation-name: animate;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+#presentation:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #f7f6f2);
+  z-index: 1;
+  mix-blend-mode: color;
+}
+
+.menu h1 {
+	font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+}
+
+@keyframes animate {
+  0% {
+    left: -2000px;
+    top: -600px;
+  }
+  100% {
+    left: -500px;
+    top: -600px;
+  }
+}
+@keyframes end-appear {
+  100% {
+    transform: scale(2);
+  }
+}
+
+section {
+  padding: 0 10%;
+}
+
+#navbar a{
+  text-decoration: none;
+  position: relative;
+  z-index: 10;
+  color: var(--navbar-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+.nav-active {
+  background-color: var(--navbar-color);
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  color: var(--navbar-bg) !important;
+  font-weight: bold;
+  transform: translate(-50%, -50%); /* Position text in the middle */
+  mix-blend-mode: var(--blend-mode); /* This makes the cutout text possible */
+}
+
+a.nav_:hover {
+  animation-name: appear;
+  color: var(--navbar-color);
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes appear {
+  100% {
+    background-color: var(--navbar-color);
+    background-size: cover;
+    width: 10px;
+    height: 10px;
+    color: var(--navbar-bg);
+    font-weight: bold;
+    text-align: center; /* Center text */
+    transform: translate(-50%, -50%); /* Position text in the middle */
+    mix-blend-mode: var(--blend-mode); /* This makes the cutout text possible */
+  }
+}
+
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease -in -out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease -in -out;
+}
+.menu .text {
+  position: absolute;
+  top: 30vh;
+  color: white;
+  width: 50%;
+  left: 10%;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 80vh;
+}
+.menu p{
+	font-weight: 300;
+}
+
+#first-section {
+  background-color: #4b6587;
+  margin: 0 auto;
+  padding: 7vh 10%;
+  color: white;
+  transition: 1s;
+}
+#first-section p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: 200;
+  font-size: 1em;
+}
+#first-section:hover {
+  position: relative;
+  padding-left: 20%;
+  color: black;
+  background-color: #c8c6c6;
+}
+
+@media (max-width: 500px) {
+	#first-section {
+		padding: 6vh 10%;
+	}
+	.menu .text {
+		position: absolute;
+		top: 30vh;
+		color: white;
+		width: 80%;
+		left: 10%;
+	}
+}
+@media (min-width:500px) {
+	.typewriter{
+		width:min-content;
+	}
+	/* DEMO-SPECIFIC STYLES */
+	.typewriter h1 {
+
+	  color: #fff;
+	  overflow: hidden; /* Ensures the content is not revealed until the animation */
+	  border-right: 0.15em solid orange; /* The typwriter cursor */
+	  white-space: nowrap; /* Keeps the content on a single line */
+	  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	  letter-spacing: 0.10em; /* Adjust as needed */
+	  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+	}
+	
+	/* The typing effect */
+	@keyframes typing {
+	  from {
+		width: 0;
+	  }
+	  to {
+		width: 100%;
+	  }
+	}
+	
+	/* The typewriter cursor effect */
+	@keyframes blink-caret {
+	  from,
+	  to {
+		border-color: transparent;
+	  }
+	  50% {
+		border-color: orange;
+	  }
+	}
+		
+}
+
+.icon{
+	transition: 1s;
+	border-radius: 50%;
+	color: white;
+}
+.icon:hover{
+	transform: scale(1.2);
+	color: black;
+}
