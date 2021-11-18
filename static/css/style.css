@@ -11,6 +11,14 @@
 	--navbar-bg: black;
 	--blend-mode: screen;
 }
+
+strong{
+  font-weight: 500;
+}
+u{
+  font-weight: 500;
+}
+
 .row {
   margin: 0;
   padding: 0;
@@ -77,6 +85,12 @@
 .menu h1 {
 	font-family: 'Poppins', sans-serif;
   font-size: 4rem;
+}
+.menu h1 span{
+  color: #EADEDE;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: 1s;
 }
 
 @keyframes animate {
@@ -166,7 +180,7 @@ a.nav_:hover {
 }
 
 #first-section {
-  background-color: #4b6587;
+  background-color: #343A40;
   margin: 0 auto;
   padding: 7vh 10%;
   color: white;
@@ -182,7 +196,7 @@ a.nav_:hover {
   position: relative;
   padding-left: 20%;
   color: black;
-  background-color: #c8c6c6;
+  background-color: #EADEDE;
 }
 
 .typewriter{
@@ -193,7 +207,7 @@ a.nav_:hover {
 
   color: #fff;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid #F58840; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.10em; /* Adjust as needed */
@@ -251,7 +265,7 @@ a.nav_:hover {
   border-color: transparent;
   }
   50% {
-  border-color: orange;
+  border-color: #F58840;
   }
 }
   
@@ -264,4 +278,19 @@ a.nav_:hover {
 .icon:hover{
 	transform: scale(1.2);
 	color: black;
+}
+
+#experience{
+  background-color: #476072;
+  color: white;
+}
+#education{
+  background-color: #C8C6C6;
+}
+#skills{
+  background-color: #F0E5CF;
+}
+
+footer{
+  background-color: #334257;
 }
