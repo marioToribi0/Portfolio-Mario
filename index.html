@@ -27,7 +27,7 @@
             justify-content: center;
             align-items: center;
             z-index: 9999;
-            transition: 1s all;
+            transition: 5s;
             opacity: 0;
         }
         .loading.show {
@@ -56,9 +56,23 @@
     <!-- Loading Javascript -->
     <script>
     // Loading
-    var Loading=(loadingDelayHidden=0)=>{let loading=null;const myLoadingDelayHidden=loadingDelayHidden;let imgs=[];let lenImgs=0;let counterImgsLoading=0;function incrementCounterImgs(){counterImgsLoading+=1;if(counterImgsLoading===lenImgs){hideLoading()}}function hideLoading(){if(loading!==null){loading.classList.remove('show');setTimeout(function(){loading.remove()},myLoadingDelayHidden)}}function init(){document.addEventListener('DOMContentLoaded',function(){loading=document.querySelector('.loading');imgs=Array.from(document.images);lenImgs=imgs.length;if(imgs.length===0){hideLoading()}else{imgs.forEach(function(img){img.addEventListener('load',incrementCounterImgs,false)})}})}return{'init':init}}
+    function onReady(callback) {
+    var intervalId = window.setInterval(function() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+        window.clearInterval(intervalId);
+        callback.call(this);
+        }
+    }, 1000);
+    }
 
-    Loading(1000).init();
+    function setVisible(selector, visible) {
+    document.querySelector(selector).style.display = visible ? 'block' : 'none';
+    }
+
+    onReady(function() {
+    setVisible('body', true);
+    setVisible('.loading', false);
+    });
     </script>
     <div class="">
         <div id="navbar" class="row navbar_">
