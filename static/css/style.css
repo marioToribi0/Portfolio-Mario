@@ -30,17 +30,18 @@ u{
 }
 #navbar{
 	/* transition: top 0.3s; */
+  font-weight: 100 !important;
 }
 .navbar_ {
   transition: 1s;
-  padding: 20px;
+  padding: 20px ;
   padding-left: 0;
   width: 100%;
   position: absolute;
   z-index: 10;
   color: var(--navbar-color);
   font-family: 'Poppins', sans-serif;
-  font-weight: 300 !important;
+
 }
 #presentation {
   overflow: hidden;
@@ -85,6 +86,7 @@ u{
 .menu h1 {
 	font-family: 'Poppins', sans-serif;
   font-size: 4rem;
+  text-align: right;
 }
 .menu h1 span{
   color: #EADEDE;
@@ -118,9 +120,10 @@ section {
   position: relative;
   z-index: 10;
   color: var(--navbar-color);
-  font-weight: bold;
+  font-weight: 400;
+
   text-transform: uppercase;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .nav-active {
   background-color: var(--navbar-color);
@@ -163,6 +166,7 @@ a.nav_:hover {
 }
 .menu .text {
   position: absolute;
+  text-align: right;
   top: 30vh;
   color: white;
   width: 50%;
@@ -177,26 +181,28 @@ a.nav_:hover {
 }
 .menu p{
 	font-weight: 300;
+  max-width: 400px;
 }
 
 #first-section {
-  background-color: #343A40;
+  background-color: #548CA8;
   margin: 0 auto;
-  padding: 7vh 10%;
+  text-align: left;
+  padding: 8.1vh 10%;
   color: white;
   transition: 1s;
 }
 #first-section p {
   padding-bottom: 0;
   margin-bottom: 0;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1em;
 }
 #first-section:hover {
   position: relative;
   padding-left: 20%;
-  color: black;
-  background-color: #EADEDE;
+  color: white;
+  background-color: #476072;
 }
 
 .typewriter{
@@ -221,6 +227,7 @@ a.nav_:hover {
   }
 	#first-section {
 		padding: 6vh 10%;
+    text-align: left;
 	}
 	.menu .text {
 		position: absolute;
@@ -292,5 +299,20 @@ a.nav_:hover {
 }
 
 footer{
-  background-color: #334257;
+  background-color: #000000;
+}
+
+#pp{
+  width: 70%;
+  max-width: 300px;
+  border-radius: 50%;
+  text-align: center;
+  transition: 1s;
+}
+#pp:hover{
+  transform: scale(1.5);
+}
+
+#about{
+  padding: 10%;
 }
