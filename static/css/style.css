@@ -27,7 +27,13 @@ u{
 .text-end {
   margin: 0;
   padding: 0;
+  text-align: end;
 }
+
+#icons{
+  padding-right: 10px;
+}
+
 #navbar{
 	/* transition: top 0.3s; */
   font-weight: 100 !important;
@@ -315,4 +321,30 @@ footer{
 
 #about{
   padding: 10%;
+  margin-bottom: 0;
+  background: #EEEEEE;
+}
+
+/* Project */
+#projects{
+  background: #548CA8;
+}
+#projects h2{
+  color: white;
+}
+
+/* Icons cards */
+.card a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+  padding: 5px;
+}
+.card .container-img{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.card{
+  min-height: 400px;
 }
