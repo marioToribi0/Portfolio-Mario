@@ -67,3 +67,12 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
+// Hover introduction
+// document.querySelector("#first-section").addEventListener("mouseover", function() {
+//   let spike = document.querySelector(".spikes");
+//   spike.style.setProperty("--spike-color", "#476072");
+// });
+// document.querySelector("#first-section").addEventListener("mouseout", function() {
+//   let spike = document.querySelector(".spikes");
+//   spike.style.setProperty("--spike-color", "#548CA8");
+// });

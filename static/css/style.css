@@ -298,7 +298,7 @@ a.nav_:hover {
   color: white;
 }
 #education{
-  background-color: #C8C6C6;
+  background-color: #EEEEEE;
 }
 #skills{
   background-color: #F0E5CF;
@@ -347,4 +347,14 @@ footer{
 }
 .card{
   min-height: 400px;
+  box-shadow: 0 2px 0 rgb(red, green, blue);
 }
+.card em{
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.dev-icons{
+  font-size: 30px;
+}
+/* Scroll bar */
