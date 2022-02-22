@@ -313,7 +313,11 @@ a.nav_:hover {
   background-color: #EEEEEE;
 }
 #skills{
-  background-color: #F0E5CF;
+  background-color: #548CA8;
+  color: white;
+}
+#skills i{
+  color: #ffbf00;
 }
 
 footer{
