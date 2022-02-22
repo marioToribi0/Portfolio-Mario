@@ -5,11 +5,7 @@ function parallax(e){
         const speed = layer.getAttribute("data-speed")
 
         let x = (window.innerWidth - e.pageX*speed)/100;
-        let y = (window.innerWidth - e.pageY*speed)/100;
-        if (y<-40){
-            y = -40;
-        }
-        layer.style.transform = (`translateX(${x}px) translateY(${y}px)`)
+        layer.style.transform = (`translateX(${x}px)`)
     })
 }
 setTimeout(function() { document.addEventListener("mousemove", parallax);}, 5000);
@@ -67,12 +63,30 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
-// Hover introduction
-// document.querySelector("#first-section").addEventListener("mouseover", function() {
-//   let spike = document.querySelector(".spikes");
-//   spike.style.setProperty("--spike-color", "#476072");
-// });
-// document.querySelector("#first-section").addEventListener("mouseout", function() {
-//   let spike = document.querySelector(".spikes");
-//   spike.style.setProperty("--spike-color", "#548CA8");
-// });
+// Max-height
+let cardsBody = document.querySelectorAll(".card-body");
+let cardsContainer = document.querySelectorAll(".card-container");
+let imgContainer = document.querySelectorAll(".card img");
+
+// Get values of the height
+var containerArray = [];
+var imgArray = [];
+
+for (let i=0; i<cardsBody.length; i++){
+  containerArray.push(cardsContainer[i].offsetHeight);
+  imgArray.push(imgContainer[i].offsetHeight);
+}
+
+function changeHeightCard(){
+  // Get max value of the arrays
+
+  let containerMax = Math.max.apply(Math, containerArray);
+  let imgMax = Math.max.apply(Math, imgArray);
+
+  for (i=0; i<cardsBody.length; i++){
+    cardsBody[i].style.height = `${containerMax-imgMax}px`;
+  }
+}
+changeHeightCard()
+
+window.addEventListener("resize", changeHeightCard)

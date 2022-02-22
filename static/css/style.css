@@ -6,6 +6,10 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
 }
+p{
+  text-align: justify;
+}
+
 :root{
 	--navbar-color: white;
 	--navbar-bg: black;
@@ -53,7 +57,7 @@ u{
   overflow: hidden;
   position: relative;
   left: 0;
-  top: -80px;
+  top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
   height: 100vh;
@@ -260,6 +264,14 @@ a.nav_:hover {
   }
 
 }
+@media (max-width: 1140px) {
+    #photo-container{
+      padding-bottom: 30px;
+    }
+    p{
+      text-align: justify;
+    }
+}
 
 /* The typing effect */
 @keyframes typing {
@@ -307,7 +319,9 @@ a.nav_:hover {
 footer{
   background-color: #000000;
 }
-
+#photo-container{
+  margin: auto;
+}
 #pp{
   width: 70%;
   max-width: 300px;
@@ -316,7 +330,7 @@ footer{
   transition: 1s;
 }
 #pp:hover{
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 #about{
@@ -345,10 +359,6 @@ footer{
   height: 100%;
   width: 100%;
 }
-.card{
-  min-height: 400px;
-  box-shadow: 0 2px 0 rgb(red, green, blue);
-}
 .card em{
   font-weight: bold;
   font-size: 0.8em;
@@ -357,4 +367,3 @@ footer{
 .dev-icons{
   font-size: 30px;
 }
-/* Scroll bar */
