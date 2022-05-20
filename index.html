@@ -63,6 +63,7 @@
     <!-- Loading Javascript -->
     <script>
     var isLoaded;
+    var time=0;
     window.addEventListener("load", event => {
     var image = document.querySelector('img');
     globalThis.isLoaded = image.complete && image.naturalHeight !== 0;
@@ -74,7 +75,12 @@
         // console.log(isLoaded)
         if (isLoaded) {
         window.clearInterval(intervalId);
+        time += 1000
+        if (time==3){
+            document.reload()
+        }
         callback.call(this);
+        
         }
     }, 1000);
     }
