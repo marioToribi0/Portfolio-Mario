@@ -62,17 +62,14 @@
 
     <!-- Loading Javascript -->
     <script>
-    const loadImage = src =>
-    new Promise((resolve, reject) => {
-    const img = new Image();
-    img.onload = () => resolve(img);
-    img.onerror = reject;
-    img.src = src;
-  });
+    window.addEventListener("load", event => {
+    var image = document.querySelector('img');
+    var isLoaded = image.complete && image.naturalHeight !== 0;
+    });
     // Loading
     function onReady(callback) {
     var intervalId = window.setInterval(function() {
-        if (loadImage("http://placekitten.com/90/100").then(image => image.complete) !== false) {
+        if (isLoaded) {
         window.clearInterval(intervalId);
         callback.call(this);
         }
