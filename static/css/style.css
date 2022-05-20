@@ -195,7 +195,7 @@ a.nav_:hover {
 }
 
 #first-section {
-  background-color: #548CA8;
+  background-color: #0AA1DD;
   margin: 0 auto;
   text-align: left;
   padding: 8.1vh 10%;
@@ -211,10 +211,10 @@ a.nav_:hover {
 #first-section:hover {
   position: relative;
   padding-left: 20%;
-  color: white;
-  background-color: #476072;
+  color: black;
+  font-weight: 900;
+  background-color: #79DAE8;
 }
-
 .typewriter{
   width:min-content;
 }
@@ -223,7 +223,7 @@ a.nav_:hover {
 
   color: #fff;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #F58840; /* The typwriter cursor */
+  border-right: 0.15em solid #2155CD; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.10em; /* Adjust as needed */
@@ -290,7 +290,7 @@ a.nav_:hover {
   border-color: transparent;
   }
   50% {
-  border-color: #F58840;
+  border-color: #2155CD;
   }
 }
   
@@ -309,19 +309,18 @@ a.nav_:hover {
   background-color: #476072;
   color: white;
 }
-#education{
-  background-color: #EEEEEE;
-}
+
 #skills{
-  background-color: #548CA8;
-  color: white;
+  background-color: #EEEEEE;
+  color: black;
+  font-weight: 900 !important;
 }
 #skills i{
-  color: #ffbf00;
+  color: black;
 }
 
 footer{
-  background-color: #000000;
+  background-color: #2155CD;
 }
 #photo-container{
   margin: auto;
@@ -345,7 +344,7 @@ footer{
 
 /* Project */
 #projects{
-  background: #548CA8;
+  background: #0AA1DD;
 }
 #projects h2{
   color: white;

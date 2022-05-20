@@ -25,16 +25,16 @@ window.onscroll = function() {
     }
 
     if(currentScrollPos!=0){
-      document.getElementById("navbar").style.backgroundColor = "#343A40";
+      document.getElementById("navbar").style.backgroundColor = "#2155CD";
 
       root.style.setProperty('--navbar-bg', "#476072");
       root.style.setProperty('--navbar-color', "white");
       root.style.setProperty('--blend-mode', 'none');
-      document.querySelector(".navbar_").style.paddingTop = "10px";
-      document.querySelector(".navbar_").style.paddingBottom = "10px";
+      document.querySelector(".navbar_").style.paddingTop = "15px";
+      document.querySelector(".navbar_").style.paddingBottom = "15px";
 
 
-      document.querySelectorAll("a")[1].text = "Mario Toribio";
+      document.querySelectorAll("a")[1].text = "<p style='color: red;'></p>";
       for (i=0;i<5;i++){
           if (i!=1){
               document.querySelectorAll("a")[i].style.display = "none";
