@@ -318,7 +318,13 @@ a.nav_:hover {
 #skills i{
   color: black;
 }
-
+#contact p{
+  text-align: center;
+}
+#contact a{
+  text-decoration: none;
+  color: black;
+}
 footer{
   background-color: #2155CD;
 }

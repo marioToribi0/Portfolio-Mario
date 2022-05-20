@@ -34,8 +34,9 @@ window.onscroll = function() {
       document.querySelector(".navbar_").style.paddingBottom = "15px";
 
 
-      document.querySelectorAll("a")[1].text = "<p style='color: red;'></p>";
-      for (i=0;i<5;i++){
+      document.querySelectorAll("a")[1].text = "Mario Toribio";
+      document.querySelectorAll("a")[1].href = "#presentation";
+      for (i=0;i<4;i++){
           if (i!=1){
               document.querySelectorAll("a")[i].style.display = "none";
           }
@@ -57,6 +58,7 @@ window.onscroll = function() {
         document.querySelectorAll("a")[i].style.display = "inline";
     }
     document.querySelectorAll("a")[1].text = "About";
+    document.querySelectorAll("a")[1].href = "#about";
 
 
     }
