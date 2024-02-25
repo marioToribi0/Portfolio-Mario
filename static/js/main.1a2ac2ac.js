@@ -9603,7 +9603,9 @@
             [\
                 {"id":1,"title":"Robot Chess Player","description":"Robot can play as black as white on a chess board.","long_description":"In this project the workflow consists in: identify the corners from the board chess using Sklearn, identify the differents colors and piece with Tensorflow and implementation of the project with Raspberry PI, OpenCV and StockFish engine.","view_more_link":"https://www.instagram.com/reel/CzyzN45uUnR/?igsh=eXJydnZ0amZqMGY0","languages":["Tensorflow Lite","Docker","Raspberry Pi","OpenCV"]},\
                 {"id":2,"title":"TalkingMuch","description":"This is an application to analize differents conversations on whatsapp","long_description":"When I was study NLP I was interested on develop a visualization to understand the max words talked in a conversations, and others things.","view_more_link":"https://talkingmuch.azurewebsites.net/","languages":["Django","PostgreSQL","Azure","Docker"]}\
-                ]}'
+                ],\
+            "sk": ["Tensorflow", "PySpark", "Scikit-Learn", "Azure", "Git", "React", "SQL", "Pytorch", "Power BI", "Javascript", "Django", "Flask"]\
+            }'
         );
 
         
@@ -9869,6 +9871,25 @@
                     ],
                 });
             };
+
+            var SKILLS = () => {
+                const [n, t] = (0, e.useState)(1), [a, o] = (0, e.useState)(!1);
+                return (0, l.jsxs)("section", {
+                    className: "flex flex-col pt-0 lg:pt-5",
+                    children: [
+                        (0, l.jsx)("h3", {
+                            className: "mb-5 px-1 lg:px-5 font-bold text-xl",
+                            children: "SKILLS",
+                        }),
+                        r.sk.map((e) =>
+                            (0, l.jsxs)(
+                                "li", {children: [e]}
+                            )
+                        ),
+                    ],
+                });
+            };
+            
         const f = function() {
                 return (0, l.jsx)("div", {
                     className: "mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-20 text-slate-900 leading-relaxed",
@@ -9893,6 +9914,7 @@
                                 children: [
                                     (0, l.jsx)(s, {}),
                                     (0, l.jsx)(c, {}),
+                                    (0, l.jsx)(SKILLS, {}),
                                     (0, l.jsxs)("div", {
                                         className: "mb-10",
                                         children: [
