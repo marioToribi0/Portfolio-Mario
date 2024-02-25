@@ -9590,7 +9590,7 @@
         var e = t(791),
             n = t(250);
         const r = JSON.parse(
-            '{"Qr":{"u2":"Mario Toribio","r4":"Data Scientist // Developer","A":"+2 years of experience across deep learning, analytics, statistic and development. I usually work with Azure, Tensorflow, SQL, Power BI and Python. I like programming and drinking coffee."},"f3":[{"id":1,"institution":"Instituto Tecnológico de Santo Domingo","qualification":"Mechatronic Engineer"},\
+            '{"Qr":{"u2":"Mario Toribio","r4":"Data Scientist // Machine Learning Engineer","A":"+2 years of experience across deep learning, analytics, statistic and development. I usually work with Azure, Tensorflow, SQL, Power BI and Python. I like programming and drinking coffee."},"f3":[{"id":1,"institution":"Instituto Tecnológico de Santo Domingo","qualification":"Mechatronic Engineer"},\
             {"id":2,"institution":"FuseMachines","qualification":"Microdegree, Artificial Intelligence"},\
             {"id":3,"institution":"Tensorflow","qualification":"Tensorflow Developer Certificate"},\
             {"id":4,"institution":"DeepLearning.AI","qualification":"Deep Learning Specialization - DeepLearning.AI Tensorflow Developer"},\
